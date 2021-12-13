@@ -19,8 +19,7 @@ app = Flask(__name__)
 line_bot_api = LineBotApi('6LQfuCZix17rWj5hVVK2nKQNcboB5rU1oQh5ET6ZqZ4CDpBhvSAwGHKk4ecWsKYYs8xCTmG03TLeLgxck17MeNiNcYlg2XFMOZgU7duukXZBw9Zs4/kAqbjRdvFCNNQ274ssaPUg4Un3MRAfG1EvugdB04t89/1O/w1cDnyilFU=')
 
 handler = WebhookHandler('fee10142b286079ac4482862e815c912')
-res_message = TextSendMessage(text='歡迎使用文藻 E 點通，您選擇的是文字測試訊息，
-您目前看到的是【文字訊息】的回覆方式。')
+
 line_bot_api.push_message('U91a40e1391d3bae1c771cf114ceaf3b9', TextSendMessage(text='系統測試中，若您覺得訊息干擾到您，您可以將聊天室設為靜音，謝謝喔！'))
 
 @app.route("/callback", methods=['POST'])
